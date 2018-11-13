@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="doctorng" parallel="classes" thread-count="1">
+    <!--enabled="true"让测试生效，可根据情况开启或关闭某些测试-->
+    <test name="test0" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.center.controller.UserControllerTest"/>
+        </classes>
+    </test>
+    <test name="test1" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.InitData"/>
+        </classes>
+    </test>
+    <test name="test2" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.organization.controller.CompanyControllerTest"/>
+        </classes>
+    </test>
+    <test name="test3" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.organization.controller.DepartmentControllerTest"/>
+        </classes>
+    </test>
+    <test name="test4" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.organization.controller.GradeControllerTest"/>
+        </classes>
+    </test>
+    <test name="test5" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.center.controller.FileControllerTest"/>
+        </classes>
+    </test>
+    <test name="test6" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.custom.controller.CustomizedFieldDefinitionControllerTest"/>
+        </classes>
+    </test>
+    <test name="test7" enabled="false" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.employee.controller.EmployeeCustomFormControllerTest"/>
+        </classes>
+    </test>
+    <test name="test8" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.organization.controller.PositionControllerTest"/>
+        </classes>
+    </test>
+    <test name="test9" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.employee.controller.EmployeeControllerTest"/>
+        </classes>
+    </test>
+    <test name="test13" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.salary.controller.SalarySettingControllerTest"/>
+        </classes>
+    </test>
+    <test name="test10" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.salary.controller.HousingFundPlanControllerTest"/>
+        </classes>
+    </test>
+    <test name="test11" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.salary.controller.SocialSecurityPlanControllerTest"/>
+        </classes>
+    </test>
+    <test name="test12" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.salary.controller.SalaryItemControllerTest"/>
+        </classes>
+    </test>
+    <test name="test14" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.salary.controller.BasicSalaryControllerTest"/>
+        </classes>
+    </test>
+    <test name="test15" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.authorization.controller.RoleControllerTest"/>
+        </classes>
+    </test>
+    <test name="test16" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.authorization.controller.EmployeeRoleControllerTest"/>
+        </classes>
+    </test>
+</suite>

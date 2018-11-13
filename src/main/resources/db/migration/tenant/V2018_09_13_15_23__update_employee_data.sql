@@ -1,0 +1,1 @@
+ALTER TABLE `employee` ADD COLUMN `super_admin` tinyint(1) NULL COMMENT '是否为超级管理员，0否，1是';

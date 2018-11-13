@@ -1,0 +1,2 @@
+DELETE FROM `salary_setting`;
+ALTER TABLE `salary_setting` CHANGE COLUMN `name` `setting_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT '名称', CHANGE COLUMN `key` `setting_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT '键', CHANGE COLUMN `value` `setting_value` varchar(100) DEFAULT NULL COMMENT '值', CHANGE COLUMN `remark` `remark` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT '备注';

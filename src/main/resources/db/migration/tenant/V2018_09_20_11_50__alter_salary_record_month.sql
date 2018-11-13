@@ -1,0 +1,3 @@
+ALTER TABLE `salary_record_monthly` CHANGE COLUMN `name` `cycle` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT '归档周期，eg: 2018-09';
+ALTER TABLE `salary_record_monthly` ADD COLUMN `cycle_start_time` varchar(20) DEFAULT '' COMMENT '计薪周期开始时间' AFTER `recorded`, ADD COLUMN `cycle_end_time` varchar(20) COMMENT '计薪周期结束时间' AFTER `cycle_start_time`;
+ALTER TABLE `salary_record_monthly` CHANGE COLUMN `date` `record_date` datetime DEFAULT NULL COMMENT '归档日期';

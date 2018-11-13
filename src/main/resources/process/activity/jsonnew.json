@@ -1,0 +1,198 @@
+{
+  "bounds": {
+    "lowerRight": {
+      "x": 1485.0,
+      "y": 700.0
+    },
+    "upperLeft": {
+      "x": 0.0,
+      "y": 0.0
+    }
+  },
+  "resourceId": "canvas",
+  "stencil": {
+    "id": "BPMNDiagram"
+  },
+  "stencilset": {
+    "namespace": "http://b3mn.org/stencilset/bpmn2.0#",
+    "url": "../editor/stencilsets/bpmn2.0/bpmn2.0.json"
+  },
+  "properties": {
+    "process_id": "wangbing",
+    "name": "test",
+    "documentation": "1212",
+    "process_namespace": "http://www.activiti.org/processdef",
+    "messages": [],
+    "executionlisteners": {
+      "executionListeners": []
+    },
+    "eventlisteners": {
+      "eventListeners": []
+    },
+    "signaldefinitions": [],
+    "messagedefinitions": []
+  },
+  "childShapes": [
+    {
+      "bounds": {
+        "lowerRight": {
+          "x": 70.0,
+          "y": 345.0
+        },
+        "upperLeft": {
+          "x": 40.0,
+          "y": 315.0
+        }
+      },
+      "resourceId": "startEvent1",
+      "childShapes": [],
+      "stencil": {
+        "id": "StartNoneEvent"
+      },
+      "properties": {
+        "overrideid": "startEvent1",
+        "executionlisteners": {
+          "executionListeners": []
+        }
+      },
+      "outgoing": [
+        {
+          "resourceId": "sid-1C0372AC-7D6F-4853-BCBA-B5BF6CB19E80"
+        }
+      ]
+    },
+    {
+      "bounds": {
+        "lowerRight": {
+          "x": 330.0,
+          "y": 350.0
+        },
+        "upperLeft": {
+          "x": 290.0,
+          "y": 310.0
+        }
+      },
+      "resourceId": "sid-6489C677-FE1A-4C09-9FC2-8887499F38D4",
+      "childShapes": [],
+      "stencil": {
+        "id": "ExclusiveGateway"
+      },
+      "properties": {
+        "overrideid": "sid-6489C677-FE1A-4C09-9FC2-8887499F38D4",
+        "executionlisteners": {
+          "executionListeners": []
+        }
+      },
+      "outgoing": []
+    },
+    {
+      "bounds": {
+        "lowerRight": {
+          "x": 230.0,
+          "y": 370.0
+        },
+        "upperLeft": {
+          "x": 130.0,
+          "y": 290.0
+        }
+      },
+      "resourceId": "sid-DECC00F8-78EE-4466-AD49-866CA8BAA308",
+      "childShapes": [],
+      "stencil": {
+        "id": "UserTask"
+      },
+      "properties": {
+        "overrideid": "sid-DECC00F8-78EE-4466-AD49-866CA8BAA308",
+        "asynchronousdefinition": false,
+        "exclusivedefinition": true,
+        "tasklisteners": {
+          "taskListeners": []
+        },
+        "executionlisteners": {
+          "executionListeners": []
+        }
+      },
+      "outgoing": [
+        {
+          "resourceId": "sid-B8D7838F-D930-48FF-9AF1-7F0B95C2259E"
+        }
+      ]
+    },
+    {
+      "bounds": {
+        "lowerRight": {
+          "x": 172.0,
+          "y": 212.0
+        },
+        "upperLeft": {
+          "x": 128.0,
+          "y": 212.0
+        }
+      },
+      "resourceId": "sid-1C0372AC-7D6F-4853-BCBA-B5BF6CB19E80",
+      "childShapes": [],
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "dockers": [
+        {
+          "x": 15.0,
+          "y": 15.0
+        },
+        {
+          "x": 50.0,
+          "y": 40.0
+        }
+      ],
+      "outgoing": [
+        {
+          "resourceId": "sid-DECC00F8-78EE-4466-AD49-866CA8BAA308"
+        }
+      ],
+      "target": {
+        "resourceId": "sid-DECC00F8-78EE-4466-AD49-866CA8BAA308"
+      },
+      "properties": {
+        "overrideid": "sid-1C0372AC-7D6F-4853-BCBA-B5BF6CB19E80"
+      }
+    },
+    {
+      "bounds": {
+        "lowerRight": {
+          "x": 172.0,
+          "y": 212.0
+        },
+        "upperLeft": {
+          "x": 128.0,
+          "y": 212.0
+        }
+      },
+      "resourceId": "sid-B8D7838F-D930-48FF-9AF1-7F0B95C2259E",
+      "childShapes": [],
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "dockers": [
+        {
+          "x": 50.0,
+          "y": 40.0
+        },
+        {
+          "x": 20.0,
+          "y": 20.0
+        }
+      ],
+      "outgoing": [
+        {
+          "resourceId": "sid-6489C677-FE1A-4C09-9FC2-8887499F38D4"
+        }
+      ],
+      "target": {
+        "resourceId": "sid-6489C677-FE1A-4C09-9FC2-8887499F38D4"
+      },
+      "properties": {
+        "overrideid": "sid-B8D7838F-D930-48FF-9AF1-7F0B95C2259E"
+      }
+    }
+  ]
+}

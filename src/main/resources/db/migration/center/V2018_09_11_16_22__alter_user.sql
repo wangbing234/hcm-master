@@ -1,0 +1,1 @@
+ALTER TABLE `center`.`user` CHANGE COLUMN `password` `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '密码';

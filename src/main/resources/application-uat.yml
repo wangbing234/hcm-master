@@ -1,0 +1,81 @@
+spring:
+  datasource:
+    url: jdbc:mysql://rm-uf6mw0de649f4df19vo.mysql.rds.aliyuncs.com:3306/
+    username: root
+    password: aural_dynastic_darnel_circa_assonant
+    name: center
+    driver-class-name: com.mysql.jdbc.Driver
+
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+
+  flyway:
+    enabled: false
+
+  activiti:
+    check-process-definitions: false
+    async-executor-activate: false
+
+  jpa:
+    show-sql: true
+    hibernate:
+      physical_naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+      ddl-auto: none
+
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+
+  redis:
+    host: hcmuatrds.redis.rds.aliyuncs.com
+    password: LCcVTJCV6i5Y8xuov5Z5
+    port: 6379
+    jedis:
+      pool:
+        max-idle: 100
+        min-idle: 1
+        max-active: 1000
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
+
+hcm:
+  config:
+    tenant-url: http://106.15.136.173/
+  aliyun-oss:
+    endpoint: http://oss-cn-shanghai.aliyuncs.com
+    endpoint-url: /oss-cn-shanghai.aliyuncs.com/
+    access-key-id: LTAIfTJ6W30YL1pJ
+    access-key-secret: hpoJXUXBKPM95aWnc9tSpx7mK4FNBP
+    bucket-name: hcm-api-dev
+    max-attachment-size: 10485760
+    #临时访问链接有效期(ms) 7天
+    temp-url-expire: 604800000
+  #全局唯一ID算法相关配置
+  snow-flake:
+    datacenter-id: 1
+    machine-id: 1
+  #mysql连接参数
+  mysql-conn-params: useSSL=false
+  # 用户登陆验证码有效期(s) 15分钟
+  login-verification-code-effective-time: 900
+  aliyun-sms:
+    # 短信API产品名称(短信产品名固定，无需修改)
+    sms-product: Dysmsapi
+    # 短信API产品域名(接口地址固定，无需修改)
+    sms-domain: dysmsapi.aliyuncs.com
+    accesskey-id: LTAIxbd7sHMEFBdl
+    accesskey-secret: HBRfhPWR4lXtNUQj741ItdRK0SE15p
+    # 短信模板-可在短信控制台中找到，发送国际/港澳台消息时，请使用国际/港澳台短信模版
+    template-code: SMS_139075060
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        host: 106.15.136.173

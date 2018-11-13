@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="HCM" parallel="false" thread-count="1" >
+    <!--enabled="true"让测试生效，可根据情况开启或关闭某些测试-->
+    <test name="InitData" enabled="true" preserve-order="true"  >
+        <classes>
+            <class name="com.qidian.hcm.module.InitDataTest" />
+        </classes>
+    </test>
+    <test name="UserTestCases" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.center.controller.UserControllerTest"/>
+        </classes>
+    </test>
+    <test name="CustomizedTestCases" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.custom.controller.CustomizedFieldDefinitionControllerTest"/>
+            <class name="com.qidian.hcm.module.employee.controller.EmployeeCustomFormControllerTest"/>
+        </classes>
+    </test>
+    <test name="OrganizationTestCases" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.organization.controller.CompanyControllerTest"/>
+            <class name="com.qidian.hcm.module.organization.controller.DepartmentControllerTest"/>
+            <class name="com.qidian.hcm.module.organization.controller.PositionControllerTest"/>
+            <class name="com.qidian.hcm.module.organization.controller.GradeControllerTest"/>
+        </classes>
+    </test>
+    <test name="EmployeeTestCases" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.employee.controller.EmployeeControllerTest"/>
+        </classes>
+    </test>
+    <test name="RoleTestCases" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.authorization.controller.RoleControllerTest"/>
+            <class name="com.qidian.hcm.module.authorization.controller.EmployeeRoleControllerTest"/>
+        </classes>
+    </test>
+    <test name="SalaryTestCases" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.salary.controller.SalarySettingControllerTest"/>
+            <class name="com.qidian.hcm.module.salary.controller.HousingFundPlanControllerTest"/>
+            <class name="com.qidian.hcm.module.salary.controller.SocialSecurityPlanControllerTest"/>
+            <class name="com.qidian.hcm.module.salary.controller.SalaryItemControllerTest"/>
+            <class name="com.qidian.hcm.module.salary.controller.BasicSalaryControllerTest"/>
+            <class name="com.qidian.hcm.module.salary.controller.EmployeeSalaryControllerTest"/>
+        </classes>
+    </test>
+    <test name="OtherTestCases" enabled="true" preserve-order="true">
+        <classes>
+            <class name="com.qidian.hcm.module.center.controller.FileControllerTest"/>
+        </classes>
+    </test>
+
+</suite>

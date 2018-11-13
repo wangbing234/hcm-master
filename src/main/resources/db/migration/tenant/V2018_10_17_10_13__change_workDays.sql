@@ -1,0 +1,1 @@
+UPDATE `salary_item` SET `formula`='#{service.getWorkDays(21)}', `inflow`='0' WHERE `id`='7';

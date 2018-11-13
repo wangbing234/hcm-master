@@ -1,0 +1,1 @@
+UPDATE customized_employee_form SET switchable = 0 WHERE code IS NOT NULL;
